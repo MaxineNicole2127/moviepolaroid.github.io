@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yassifiedMoviePolaroid.css">
+    <link rel="icon" href="movie tape.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Cormorant+Unicase:wght@400&family=Gluten:wght@300&family=Martian+Mono:wght@300&family=Play&family=Poppins:wght@400&family=Prosto+One&family=Quicksand:wght@500&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
+    <script src="yassifiedMoviePolaroid.js" defer></script>
+    <title>Movie Polaroid</title>
+</head>
+
+<body>
+    <!-- SECTION 1 : TOP PART -->
+    <section class="topNav">
+        <!-- title -->
+        <p id="siteTitle">Movie Polaroid Maker</p>
+        <center><div id="underline"></div></center>
+        <!-- search section -->
+        <div class="searchSection">
+            <span id="popcorn"></svg></span>
+            <form>
+                <input type="search" id="searchInput" placeholder="Enter movie name...">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 2: MOVIE RESULTS -->
+    <div class="moviesPart">
+        <section class="moviesSection">
+
+            <!-- <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img src="https://lumiere-a.akamaihd.net/v1/images/22_sumbrk_payoff_1sht_philippines_1cfaf6a9.jpeg?region=0%2C0%2C743%2C1100" id="movie_pic"></center>
+                        <div class="movie-title-wrapper">
+                            <h3 id="movie_title">Wakanda Forever</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img src="https://lumiere-a.akamaihd.net/v1/images/22_sumbrk_payoff_1sht_philippines_1cfaf6a9.jpeg?region=0%2C0%2C743%2C1100" id="movie_pic"></center>
+                        <div class="movie-title-wrapper">
+                            <h3 id="movie_title">The Edge of Seventeen</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img src="https://lumiere-a.akamaihd.net/v1/images/22_sumbrk_payoff_1sht_philippines_1cfaf6a9.jpeg?region=0%2C0%2C743%2C1100" id="movie_pic"></center>
+                        <div class="movie-title-wrapper">
+                            <h3 id="movie_title">Harry Potter and the Philosopher's Stone</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img src="https://lumiere-a.akamaihd.net/v1/images/22_sumbrk_payoff_1sht_philippines_1cfaf6a9.jpeg?region=0%2C0%2C743%2C1100" id="movie_pic"></center>
+                        <div class="movie-title-wrapper">
+                            <h3 id="movie_title">Wakanda Forever</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <center><img src="https://lumiere-a.akamaihd.net/v1/images/22_sumbrk_payoff_1sht_philippines_1cfaf6a9.jpeg?region=0%2C0%2C743%2C1100" id="movie_pic"></center>
+                        <div class="movie-title-wrapper">
+                            <h3 id="movie_title">Wakanda Forever</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+
+        </section>
+
+        <!-- <div class="footer">
+            <i class="fa-solid fa-angle-up" id="caretUp"></i>
+        </div> -->
+    </div>
+
+    <!-- SECTION 3: POLAROID AND INPUT FORM SECTION -->
+    <div class="polaroidSection">
+        <div class="section_background">
+            <div id="noCurl"></div>
+            <svg id="curl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D3C0B9" fill-opacity="1" d="M0,160L18.5,160C36.9,160,74,160,111,149.3C147.7,139,185,117,222,122.7C258.5,128,295,160,332,154.7C369.2,149,406,107,443,117.3C480,128,517,192,554,208C590.8,224,628,192,665,181.3C701.5,171,738,181,775,170.7C812.3,160,849,128,886,112C923.1,96,960,96,997,133.3C1033.8,171,1071,245,1108,245.3C1144.6,245,1182,171,1218,144C1255.4,117,1292,139,1329,165.3C1366.2,192,1403,224,1422,240L1440,256L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path></svg>
+        </div>
+        <div class="polaroidWrapper"> 
+            <div class="polaroid" id="polaroid">
+                <div class="imgDisplay">
+                    <!-- <img src="lady bird.jpeg" id="moviePic"> -->
+                    <input type="file" accept="image/jpeg image/png image/jpeg" id="direct_img" style="display: none;">
+                    <label for="direct_img"><img src="lady bird.jpeg" id="moviePic"></label>
+                    <label for="direct_img"><span id="addImage"><i class="fa-solid fa-circle-plus"></i></span></label>
+
+
+                    <!-- <label for="imgInput"><img src="lady bird.jpeg" id="moviePic"></label>
+                    <label for="imgInput"><span id="addImage"><i class="fa-solid fa-circle-plus"></i></span></label> -->
+
+                </div>
+                
+                <div class="bigger"> 
+                    <!-- <p id="movieTitle">LADY BIRD<span id="movieYear">2017</span></p> -->
+                    <p id="movieTitle">LADY BIRD<span id="movieYear">2017</span></p>
+                </div>
+                
+                <div class="smaller">
+                    <p class="labels">written by <span id="writer">Greta Gerwig</span></p>
+                    <p class="labels">directed by <span id="director">Greta Gerwig</span></p>
+                    <p class="labels">running time <span id="runtime">1hr 35mins</span></p>
+                </div>
+            </div>        
+        </div>
+
+        <div class="inputFormWrapper">
+            <div class="inputForm"> 
+                <!-- TITLE -->
+                <div class="inputLabel" id="titleInputForm">Title 
+                    <span>
+                        <div class="inputBackground">
+                            <input class="textInput" type="text" id="titleInput" placeholder="enter movie title">
+                        </div>
+
+                        <div class="manageTitle">
+                            <span id="up" onclick="increaseSize()"><i class="fa-solid fa-caret-up"></i></span>
+                            <span id="down" onclick="decreaseSize()"><i class="fa-solid fa-caret-down"></i></span>
+                            <span id="left" onclick="decreaseSpacing()"><i class="fa-solid fa-caret-left"></i></span>
+                            <span id="right" onclick="increaseSpacing()"><i class="fa-solid fa-caret-right"></i></i></span>
+                        </div>
+
+                    </span>
+                </div>
+
+                <!-- YEAR -->
+                <div class="inputLabel" id="yearInputForm">Year 
+                    <span>
+                        <div class="inputBackground">
+                            <input class="textInput" type="text" id="yearInput" placeholder="enter release year">
+                        </div>
+                    </span>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="inputLabel" id="imageInputForm">Image 
+                    <span>
+                        <label for="imgInput" id="label">UPLOAD IMAGE</label>
+                        <input type="file" accept="image/jpeg image/png image/jpg" id="imgInput" onchange="changePicture()">
+                    </span>
+
+                    <label for="imgInput"><img src="lady bird.jpeg" id="imgPreview"></label>
+                </div>
+
+                <!-- DIRECTOR -->
+                <div class="inputLabel" id="directorInputForm">Director
+                    <span>
+                        <div class="inputBackground">
+                            <input class="textInput" type="text" id="directorInput" placeholder="enter director's name">
+                        </div>
+                    </span>
+                </div>
+
+                <!-- WRITER -->
+                <div class="inputLabel" id="writerInputForm">Writer
+                    <span>
+                        <div class="inputBackground">
+                            <input class="textInput" type="text" id="writerInput" placeholder="enter writer's name">
+                        </div>
+                    </span>
+                </div>
+
+                <!-- RUNTIME -->
+                <div class="inputLabel" id="runtimeInputForm">Runtime
+                    <span>
+                        <div class="inputBackground">
+                            <input class="textInput" type="text" id="runtimeInput" placeholder="enter runtime(hrs & mins)">
+                        </div>
+                    </span>
+                </div>
+
+            </div>
+        </div> 
+        <div class="buttons">
+            <button id="saveButton" onclick="savePolaroid()">Save as PNG</button>
+            <button id="saveChangesButton" onclick="saveChanges()">Save Changes</button>
+            <button id="resetButton" onclick="resetPolaroid()">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<!-- others -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D3C0B9" fill-opacity="1" d="M0,160L18.5,160C36.9,160,74,160,111,149.3C147.7,139,185,117,222,122.7C258.5,128,295,160,332,154.7C369.2,149,406,107,443,117.3C480,128,517,192,554,208C590.8,224,628,192,665,181.3C701.5,171,738,181,775,170.7C812.3,160,849,128,886,112C923.1,96,960,96,997,133.3C1033.8,171,1071,245,1108,245.3C1144.6,245,1182,171,1218,144C1255.4,117,1292,139,1329,165.3C1366.2,192,1403,224,1422,240L1440,256L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z"></path></svg> -->
