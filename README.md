@@ -11,3 +11,10 @@ LIMITATIONS:
 
 
 NOT FOR COMMERCIAL USE.
+
+must look like this, but it is not yet responsive:
+
+![image](https://github.com/MaxineNicole2127/moviepolaroid.github.io/assets/97998223/2ea422e5-e539-4772-a58b-926000ba71d5)
+
+
+will come back to this sometime later!
